@@ -16,8 +16,8 @@ frontend edine-frontend
         default_backend edine-backend
 backend edine-backend
         balance roundrobin
-        server 6238-web-01 54.196.216.8:80 check
-        server 6238-web-02 98.80.15.59:80 check
+        server 6238-web-01 54.163.215.113:80 check
+        server 6238-web-02 52.72.149.149:80 check
 "
 echo "$server_config" | sudo tee -a /etc/haproxy/haproxy.cfg
 
